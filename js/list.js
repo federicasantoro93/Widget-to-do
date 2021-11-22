@@ -5,7 +5,7 @@ const List = (data) => {
 //.map(item =>`<li><label><input type="checkbox" id="${item.id}" ${item.completed ? "checked" : "unchecked"}/> ${item.title}</label></li>`) //Non riesco a dare la condizione checked
 .map(
     (item) =>`<li>
-    <label><input type="checkbox" id="${item.id}" ${item.completed == "true" ? "checked" : "unchecked"}  /> ${item.title}</label>
+    <label class=${item.completed == "true" ? "checked" : "unchecked" }><input type="checkbox" id="${item.id}" ${item.completed == "true" ? "checked" : "unchecked"}  /> ${item.title}</label>
     <button class="delete" id="${item.id}">x</button>
     <hr>
     </li>`) 
